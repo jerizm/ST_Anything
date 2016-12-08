@@ -86,9 +86,11 @@ void setup()
   //Interrupt Sensors 
   
   //Executors
-  static st::EX_RCSwitch executor1(F("rcswitch1"), PIN_RCSWITCH, 35754004, 26, 18976788, 26);
-  static st::EX_RCSwitch executor2(F("rcswitch2"), PIN_RCSWITCH, 35751956, 26, 18974740, 26);
-  static st::EX_RCSwitch executor3(F("rcswitch3"), PIN_RCSWITCH, 35756052, 26, 18978836, 26);
+  static st::EX_RCSwitch executor1(F("rcswitch1"), PIN_RCSWITCH, 283955, 24, 283964, 24, 187);
+  static st::EX_RCSwitch executor2(F("rcswitch2"), PIN_RCSWITCH, 284099, 24, 284108, 24, 187);
+  static st::EX_RCSwitch executor3(F("rcswitch3"), PIN_RCSWITCH, 284419, 24, 284428, 24, 187);
+  static st::EX_RCSwitch executor4(F("rcswitch4"), PIN_RCSWITCH, 285955, 24, 285964, 24, 187);
+  static st::EX_RCSwitch executor5(F("rcswitch5"), PIN_RCSWITCH, 292099, 24, 292108, 24, 187);
 
   //*****************************************************************************
   //  Configure debug print output from each main class 
@@ -114,6 +116,8 @@ void setup()
   st::Everything::addExecutor(&executor1);
   st::Everything::addExecutor(&executor2);
   st::Everything::addExecutor(&executor3);
+  st::Everything::addExecutor(&executor4);
+  st::Everything::addExecutor(&executor5);
   
   //*****************************************************************************
   //Initialize each of the devices which were added to the Everything Class
